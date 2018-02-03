@@ -1,9 +1,9 @@
 package routes
 
 import (
-    "github.com/jordyvandomselaar/dungeons_and_dragons_backend_go/src/controllers/authentication"
     "github.com/gorilla/mux"
     "github.com/jordyvandomselaar/dungeons_and_dragons_backend_go/src/controllers"
+    "github.com/jordyvandomselaar/dungeons_and_dragons_backend_go/src/controllers/authentication"
 )
 
 func Initialize() *mux.Router {

@@ -1,19 +1,19 @@
 package models
 
 import (
-    "github.com/jinzhu/gorm"
+	"github.com/jinzhu/gorm"
 )
 
 type Token struct {
-    gorm.Model
+	gorm.Model
 
-    UserID int
-    Token string
+	UserID int
+	Token  string
 }
 
 func NewToken(userId int, token string) *Token {
-    return &Token{
-        UserID: userId,
-        Token: token,
-    }
+	return &Token{
+		UserID: userId,
+		Token:  token,
+	}
 }
