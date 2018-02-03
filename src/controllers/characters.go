@@ -14,10 +14,16 @@ type Characters struct {
 func (c *Characters) Index(w http.ResponseWriter, r *http.Request) {
 	characters := []entities.Character{
 		{
+			Id:   1,
 			Name: "Gentoo",
 		},
 		{
+			Id:   2,
 			Name: "Jim",
+		},
+		{
+			Id:   3,
+			Name: "Bob",
 		},
 	}
 
