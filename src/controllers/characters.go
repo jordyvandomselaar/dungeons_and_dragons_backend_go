@@ -30,5 +30,6 @@ func (c *Characters) Index(w http.ResponseWriter, r *http.Request) {
 	response, _ := json.Marshal(characters)
 
 	w.Header().Add("content-type", "application/json")
+	w.Header().Add("Access-Control-Allow-Origin", "*")
 	fmt.Fprint(w, string(response))
 }
