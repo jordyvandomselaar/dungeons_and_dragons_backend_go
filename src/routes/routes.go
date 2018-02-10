@@ -14,6 +14,7 @@ func Initialize() *mux.Router {
 
     r.HandleFunc("/register", rc.Index).Name("authentication.register").Methods("POST")
     r.HandleFunc("/characters", cc.Index).Name("characters.index").Methods("GET")
+    r.HandleFunc("/characters/{id}", cc.Show).Name("characters.show").Methods("GET")
 
     return r
 }
